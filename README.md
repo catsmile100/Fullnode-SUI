@@ -81,8 +81,8 @@ sui client active-address
 ```
 4. You can check your balance at `https://explorer.devnet.sui.io/addresses/<YOUR_WALLET_ADDRESS>`
 ```
-5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
 ```
+5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
 ```
 Also you can get list of objects in your console by using command
 ```
@@ -99,7 +99,6 @@ SECOND_OBJECT_ID=$(echo $JSON | jq -r .[1].id.id)
 sui client merge-coin --primary-coin ${FIRST_OBJECT_ID} --coin-to-merge ${SECOND_OBJECT_ID} --gas-budget 1000
 ```
 ```
-
 Lets yet again check list of objects
 ```
 sui client gas
