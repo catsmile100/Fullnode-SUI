@@ -22,14 +22,11 @@ Official documentation:
 > Storage requirements will vary based on various factors (age of the chain, transaction rate, etc) although we don't anticipate running a fullnode on devnet will require more than 50 GBs today given it is reset upon each release roughly every two weeks.
 
 ## Set up your Sui full node
-### Option 1 (automatic)
+### Automatic
 You can setup your Sui full node in minutes by using automated script below
 ```
 wget -O sui.sh https://raw.githubusercontent.com//catsmile100/Fullnode-SUI-Devnet/sui.sh && chmod +x sui.sh && ./sui.sh
 ```
-### Option 2 (manual)
-You can follow [manual guide](https://github.com/kj89/testnet_manuals/blob/main/sui/manual_install.md) if you better prefer setting up node manually
-
 ## Make tests
 Once the fullnode is up and running, test some of the JSON-RPC interfaces.
 
