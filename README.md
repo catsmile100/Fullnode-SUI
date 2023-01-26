@@ -35,24 +35,6 @@ Once the fullnode is up and running, test some of the JSON-RPC interfaces.
 curl -s -X POST http://127.0.0.1:9000 -H 'Content-Type: application/json' -d '{ "jsonrpc":"2.0", "method":"rpc.discover","id":1}' | jq .result.info
 ```
 
-You should see something similar in the output:
-```json
-{
-  "title": "Sui JSON-RPC",
-  "description": "Sui JSON-RPC API for interaction with the Sui network gateway.",
-  "contact": {
-    "name": "Mysten Labs",
-    "url": "https://mystenlabs.com",
-    "email": "build@mystenlabs.com"
-  },
-  "license": {
-    "name": "Apache-2.0",
-    "url": "https://raw.githubusercontent.com/MystenLabs/sui/main/LICENSE"
-  },
-  "version": "0.1.0"
-}
-```
-
 ### Get the five most recent transactions
 ```
 curl --location --request POST 'http://127.0.0.1:9000/' --header 'Content-Type: application/json' \
@@ -96,18 +78,15 @@ sui client active-address
 ```
 
 3. Wait until bot sends tokens to your wallet
-
+```
 4. You can check your balance at `https://explorer.devnet.sui.io/addresses/<YOUR_WALLET_ADDRESS>`
-
+```
 5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
-
-
+```
 Also you can get list of objects in your console by using command
 ```
 sui client gas
 ```
-
-
 ## Operations with objects
 Now lets do some operations with objects
 
