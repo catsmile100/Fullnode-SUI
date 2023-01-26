@@ -12,12 +12,12 @@ Official documentation:
 - Experiment with Sui DevNet: https://docs.sui.io/explore/devnet
 - Check you node health: https://node.sui.zvalid.com/
 
-## Minimum hardware requirements
+## Minimum Hardware
 - CPU: 2 CPU
 - Memory: 4 GB RAM
 - Disk: 50 GB SSD Storage
 
-## Recommended hardware requirements
+## Recommended Hardware
 - CPU: 2 CPU
 - Memory: 8 GB RAM
 - Disk: 50 GB SSD Storage
