@@ -97,8 +97,9 @@ FIRST_OBJECT_ID=$(echo $JSON | jq -r .[0].id.id)
 SECOND_OBJECT_ID=$(echo $JSON | jq -r .[1].id.id)
 sui client merge-coin --primary-coin ${FIRST_OBJECT_ID} --coin-to-merge ${SECOND_OBJECT_ID} --gas-budget 1000
 ```
-```
+
 Lets yet again check list of objects
+```
 ```
 sui client gas
 ```
