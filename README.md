@@ -2,7 +2,7 @@
   <img height="100" height="auto" src="https://user-images.githubusercontent.com/50621007/174559198-c1f612e5-bba2-4817-95a8-8a3c3659a2aa.png">
 </p>
 
-# Sui node setup for devnet
+# Sui node devnet
 
 Official documentation:
 - News Update : https://sui.io/resources-sui/testnet-wave-2-is-now-live
