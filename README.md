@@ -86,7 +86,7 @@ Also you can get list of objects in your console by using command
 ```
 sui client gas
 ```
-```
+
 ## Operations with objects
 Now lets do some operations with objects
 
