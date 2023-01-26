@@ -83,6 +83,7 @@ sui client active-address
 ```
 5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
 ```
+```
 Also you can get list of objects in your console by using command
 ```
 sui client gas
