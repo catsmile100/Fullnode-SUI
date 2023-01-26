@@ -76,12 +76,10 @@ sui client active-address
 ```
 !faucet <YOUR_WALLET_ADDRESS>
 ```
-
 3. Wait until bot sends tokens to your wallet
-```
+
 4. You can check your balance at `https://explorer.devnet.sui.io/addresses/<YOUR_WALLET_ADDRESS>`
-```
-```
+
 5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
 ```
 Also you can get list of objects in your console by using command
