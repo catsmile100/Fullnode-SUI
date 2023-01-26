@@ -2,10 +2,11 @@
 Instalation Fullnode SUI
 
 
-
 <p align="center">
   <img height="100" height="auto" src="https://user-images.githubusercontent.com/50621007/174559198-c1f612e5-bba2-4817-95a8-8a3c3659a2aa.png">
 </p>
+
+<a href="https://discord.gg/sui" target="_blank">Join our discord <img src="https://user-images.githubusercontent.com/50621007/176236430-53b0f4de-41ff-41f7-92a1-4233890a90c8.png" width="30"/></a>
 
 # Install Sui node
 To setup Sui node follow the steps below
