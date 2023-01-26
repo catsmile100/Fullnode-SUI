@@ -5,6 +5,7 @@
 # Sui node setup for devnet
 
 Official documentation:
+- News Update : https://sui.io/resources-sui/testnet-wave-2-is-now-live
 - Discord : https://discord.gg/sui
 - Explorer : https://explorer.sui.io
 - Official manual: https://docs.sui.io/build/fullnode
