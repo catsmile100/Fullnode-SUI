@@ -66,7 +66,7 @@ curl --location --request POST 'http://127.0.0.1:9000/' --header 'Content-Type: 
 ```
 
 ## Post installation
-After setting up your Sui node you have to register it in the [Sui Discord](https://discord.gg/b5vWu33f):
+After setting up your Sui node you have to register it in the [Sui Discord](https://discord.gg/sui):
 1) navigate to `#📋node-ip-application` channel
 2) post your node endpoint url
 ```
@@ -77,8 +77,6 @@ http://<YOUR_NODE_IP>:9000/
 Enter your node IP into https://node.sui.zvalid.com/
 
 Healthy node should look like this:
-
-![image](https://user-images.githubusercontent.com/50621007/175829451-a36d32ff-f30f-4030-8875-7ffa4e999a24.png)
 
 ## Generate wallet
 ```
@@ -97,27 +95,18 @@ sui client active-address
 !faucet <YOUR_WALLET_ADDRESS>
 ```
 
-![image](https://user-images.githubusercontent.com/50621007/180215182-cbb7fc6c-aba3-4834-ad05-f79e1c26b40c.png)
-
 3. Wait until bot sends tokens to your wallet
-
-![image](https://user-images.githubusercontent.com/50621007/180222321-1dc5323b-1174-41c8-b632-6ac2ce639ce1.png)
 
 4. You can check your balance at `https://explorer.devnet.sui.io/addresses/<YOUR_WALLET_ADDRESS>`
 
-![image](https://user-images.githubusercontent.com/50621007/180222644-d06af8ea-f0e7-4775-a341-f7b5cdda18af.png)
-
 5. If you expand `Coins` than you can find that your wallet contains `5 unique objects` with `50000` token balances
 
-![image](https://user-images.githubusercontent.com/50621007/180223173-a24a6211-5388-4d18-8d88-a873f8565352.png)
-![image](https://user-images.githubusercontent.com/50621007/180224381-ba4aec00-1176-4ae9-98a5-4de730822d88.png)
 
 Also you can get list of objects in your console by using command
 ```
 sui client gas
 ```
 
-![image](https://user-images.githubusercontent.com/50621007/180225024-795427bb-77b7-4110-b829-0eb1ba5b6a62.png)
 
 ## Operations with objects
 Now lets do some operations with objects
@@ -129,22 +118,6 @@ FIRST_OBJECT_ID=$(echo $JSON | jq -r .[0].id.id)
 SECOND_OBJECT_ID=$(echo $JSON | jq -r .[1].id.id)
 sui client merge-coin --primary-coin ${FIRST_OBJECT_ID} --coin-to-merge ${SECOND_OBJECT_ID} --gas-budget 1000
 ```
-
-You should see output like this:
-```
------ Certificate ----
-Transaction Hash: t3BscscUH2tMnMRfzYyc4Nr9HZ65nXuaL87BicUwXVo=
-Transaction Signature: OCIYOWRPLSwpLG0bAmDTMixvE3IcyJgcRM5TEXJAOWvDv1xDmPxm99qQEJJQb0iwCgEfDBl74Q3XI6yD+AK7BQ==@U6zbX7hNmQ0SeZMheEKgPQVGVmdE5ikRQZIeDKFXwt8=
-Signed Authorities Bitmap: RoaringBitmap<[0, 2, 3]>
-Transaction Kind : Call
-Package ID : 0x2
-Module : coin
-Function : join
-Arguments : ["0x530720be83c5e8dffde5f602d2f36e467a24f6de", "0xb66106ac8bc9bf8ec58a5949da934febc6d7837c"]
-Type Arguments : ["0x2::sui::SUI"]
------ Merge Coin Results ----
-Updated Coin : Coin { id: 0x530720be83c5e8dffde5f602d2f36e467a24f6de, value: 100000 }
-Updated Gas : Coin { id: 0xc0a3fa96f8e52395fa659756a6821c209428b3d9, value: 49560 }
 ```
 
 Lets yet again check list of objects
@@ -153,8 +126,6 @@ sui client gas
 ```
 
 We can see that two first objects are now merged into one and gas has been payed by third object
-
-![image](https://user-images.githubusercontent.com/50621007/180228094-10b563f4-ea6f-42cd-b560-6abeda47c2df.png)
 
 >This is only one example of transactions that can be made at the moment. Other examples can be found at the [official website](https://docs.sui.io/build/wallet)
 
