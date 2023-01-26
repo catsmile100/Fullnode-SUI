@@ -74,7 +74,6 @@ echo -e "y\n\n0\n" | sui client
 ```
 sui client active-address
 ```
-
 2. Navigate to [Sui Discord](https://discord.gg/sui) `#devnet-faucet` channel and top up your wallet
 ```
 !faucet <YOUR_WALLET_ADDRESS>
@@ -89,10 +88,8 @@ Also you can get list of objects in your console by using command
 ```
 sui client gas
 ```
-
 ## Operations with objects
 Now lets do some operations with objects
-
 ### Merge two objects into one
 ```
 JSON=$(sui client gas --json | jq -r)
@@ -104,7 +101,6 @@ Lets yet again check list of objects
 ```
 sui client gas
 ```
-
 We can see that two first objects are now merged into one and gas has been payed by third object
 
 >This is only one example of transactions that can be made at the moment. Other examples can be found at the [official website](https://docs.sui.io/build/wallet)
@@ -124,7 +120,6 @@ Check sui client version
 ```
 sui --version
 ```
-
 ## Recover your keys
 Copy your keys into `$HOME/.sui/sui_config/` directory and restart the node
 
