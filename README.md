@@ -8,6 +8,25 @@ Instalation Fullnode SUI
 
 <a href="https://discord.gg/sui" target="_blank">Join our discord <img src="https://user-images.githubusercontent.com/50621007/176236430-53b0f4de-41ff-41f7-92a1-4233890a90c8.png" width="30"/></a>
 
+# Sui node setup for devnet
+
+Official documentation:
+- Official manual: https://docs.sui.io/build/fullnode
+- Experiment with Sui DevNet: https://docs.sui.io/explore/devnet
+- Check you node health: https://node.sui.zvalid.com/
+
+## Minimum hardware requirements
+- CPU: 2 CPU
+- Memory: 4 GB RAM
+- Disk: 50 GB SSD Storage
+
+## Recommended hardware requirements
+- CPU: 2 CPU
+- Memory: 8 GB RAM
+- Disk: 50 GB SSD Storage
+
+> Storage requirements will vary based on various factors (age of the chain, transaction rate, etc) although we don't anticipate running a fullnode on devnet will require more than 50 GBs today given it is reset upon each release roughly every two weeks.
+
 # Install Sui node
 To setup Sui node follow the steps below
 
