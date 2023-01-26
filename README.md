@@ -5,6 +5,8 @@
 # Sui node setup for devnet
 
 Official documentation:
+- Discord : https://discord.gg/sui
+- Explorer : https://explorer.sui.io
 - Official manual: https://docs.sui.io/build/fullnode
 - Experiment with Sui DevNet: https://docs.sui.io/explore/devnet
 - Check you node health: https://node.sui.zvalid.com/
